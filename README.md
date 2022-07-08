@@ -2,13 +2,12 @@
 #### Completed by: Niko Seino
 #### Date: 7/7/2022
 ### [Tableau Dashboard](https://public.tableau.com/views/BellabeatCaseStudy_16572546536690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
-```
+
 _Background Information_
 
 **Bellabeat** is a high-tech company that manufactures health-focused smart products. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits. 
 
 ### ASK
-```
 _Business Task_
 
 Sršen, the company's cofounder, would like an analysis of Bellabeat’s available consumer data to identify opportunities for growth. She has asked the marketing analytics team to analyze smart device usage data in order to gain insight into how people are already using their smart devices. Then, using this information, she would like recommendations for how these trends can inform Bellabeat marketing strategy. Therefore, in this case study, I answer the following questions:
@@ -17,7 +16,6 @@ Sršen, the company's cofounder, would like an analysis of Bellabeat’s availab
 2. How can these trends help influence Bellabeat marketing strategy?
 
 ### PREPARE
-```
 _About the Data_
 
 The data for this case study comes from [Fitbit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit), a public domain dataset available on Kaggle. It contains personal fitness tracker information from 30 FitBit users. These 30 Fitbit users consented to the submission of all personal tracker data contained in this dataset. 
@@ -29,7 +27,6 @@ _Limitations_
 - Limited: The dataset does not contain any demographic information about the users, including gender, age, or location, which would be beneficial for marketing purposes to target specific customers
 
 ### PROCESS
-```
 1. Install and load packages
 ```{r}
 install.packages('tidyverse')
@@ -100,7 +97,7 @@ weight %>%
   summary()
 ```
 
-## ANALYZE
+### ANALYZE
 Merging the Data
 ```{r}
 combined_data <- merge(daily_sleep, daily_activity, by="Id")
@@ -135,11 +132,11 @@ These visualizations show the following smart device usage trends:
 - Participants took the most steps on Tuesdays and Saturdays.
 - On average, the fewest steps were taken at 3:00 and the most steps taken at 18:00.
 
-## SHARE
+### SHARE
 [Bellabeat Dashboard - Tableau](https://public.tableau.com/views/BellabeatCaseStudy_16572546536690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 <div class='tableauPlaceholder' id='viz1657267313918' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatCaseStudy_16572546536690&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BellabeatCaseStudy_16572546536690&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatCaseStudy_16572546536690&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>     
 
-## ACT
+### ACT
 _Recommendations_
 How can these trends help influence Bellabeat marketing strategy?
 
