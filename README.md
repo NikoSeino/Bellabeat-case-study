@@ -2,6 +2,7 @@
 #### Completed by: Niko Seino
 #### Date: 7/7/2022
 ### [Tableau Dashboard](https://public.tableau.com/views/BellabeatCaseStudy_16572546536690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+_____________________________________________________________________________________________________________________________________________________________
 
 _Background Information_
 
