@@ -139,6 +139,7 @@ These visualizations show the following smart device usage trends:
 
 ### ACT
 _Recommendations_
+
 How can these trends help influence Bellabeat marketing strategy?
 
 1. Very few customers utilized the weight log feature, so this does not appear to be a selling point. Focus on marketing other features such as activity, sleep, and steps tracking, and consider further research into how to make the weight log feature more user-friendly.
