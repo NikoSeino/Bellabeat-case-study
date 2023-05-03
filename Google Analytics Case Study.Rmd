@@ -3,10 +3,9 @@ title: "Bellabeat Case Study"
 author: "Niko Seino"
 date: '2023-05-01'
 output:
-  rmarkdown::github_document
+  github_document:
     toc: true
-    toc_float: true
-    theme: "cerulean"
+
 ---
 
 ## Background Information
