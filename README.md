@@ -123,6 +123,7 @@ daily_activity <- subset(daily_activity, TotalSteps <= 28680)
 ```
 
 2. Extract more information by running descriptive statistics
+
 _Sleep Data_
 
 * What is the average amount of sleep for each participant?
