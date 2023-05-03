@@ -279,6 +279,7 @@ ggplot(daily_activity, aes(x = TotalSteps)) +
 ```
 
 ![](Google-Analytics-Case-Study--1-_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![unnamed-chunk-8-1](https://user-images.githubusercontent.com/102825218/236005222-ff7b67fd-800b-4d9c-afba-32a3684f18b7.png)
 
 ``` r
 # Most of the daily total steps appear to be around 4000-11000.
@@ -457,6 +458,7 @@ ggplot(data=daily_activity, aes(x=TotalSteps, y=SedentaryMinutes)) +
 ```
 
 ![](Google-Analytics-Case-Study--1-_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![unnamed-chunk-15-1](https://user-images.githubusercontent.com/102825218/236005681-7eb02a39-675a-4df3-ac5c-f3d4328dc9b0.png)
 
 There appears to be no correlation between total daily steps taken and
 sedentary minutes. We can confirm with a simple linear regression:
@@ -501,6 +503,8 @@ ggplot(mean_sleep, aes(x = Id, y = mean_sleep)) +
 ```
 
 ![](Google-Analytics-Case-Study--1-_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![unnamed-chunk-17-1](https://user-images.githubusercontent.com/102825218/236005780-8306a808-0a37-4d30-ac60-b20a558eff5b.png)
+
 
 The graph shows the average sleep of each participant individually, as
 well as how their sleep compares to the overall average across all
@@ -517,6 +521,8 @@ ggplot(mean_steps, aes(x = Hour, y = mean_steps)) +
 ```
 
 ![](Google-Analytics-Case-Study--1-_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![unnamed-chunk-18-1](https://user-images.githubusercontent.com/102825218/236005815-3fa7e215-a91a-4b09-a445-10641ea4eaaf.png)
+
 
 We can see that the most steps were taken in the evening, from 5-7pm,
 and the least steps in the middle of the night, between 12-4am.
@@ -558,6 +564,8 @@ ggplot(combined_data, aes(x = mean_steps_id, y = sum_very)) +
 ```
 
 ![](Google-Analytics-Case-Study--1-_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![unnamed-chunk-19-1](https://user-images.githubusercontent.com/102825218/236005852-fbc07556-fe67-46f5-8e90-b55afeecbfbe.png)
+
 
 We can see a moderate upwards trend of “very active minutes” increasing
 as average steps in a day increases.
