@@ -63,7 +63,7 @@ n_distinct(weight$Id)
 ```
 4. View and clean up the data sets
 ```{r}
-# First, the daily_sleep data
+First, the daily_sleep data
 head(daily_sleep)
 # The 12:00:00 AM time stamp on each observation is redundant so we should remove it to make the data easier to work with
 daily_sleep$SleepDay <- (gsub('12:00:00 AM', '', daily_sleep$SleepDay))
@@ -110,8 +110,9 @@ summary(daily_activity$TotalSteps)
 ggplot(daily_activity, aes(x = TotalSteps)) +
   geom_boxplot()
 # Most of the daily total steps appear to be around 4000-11000.
-#   There appear to be possible outliers on the high end
-
+# There appear to be possible outliers on the high end
+```
+```{r}
 steps_upper <- quantile(daily_activity$TotalSteps, .9985, na.rm = TRUE)
 # This shows that 99.85% of the observations are at 28,680 or below. 
 # Values above this number are more than 3 standard deviations from the mean, 
@@ -119,7 +120,6 @@ steps_upper <- quantile(daily_activity$TotalSteps, .9985, na.rm = TRUE)
 
 daily_activity <- subset(daily_activity, TotalSteps <= 28680)
 # 2 outliers were removed
-
 ```
 
 2. Extract more information by running descriptive statistics
@@ -135,7 +135,6 @@ mean_sleep <- daily_sleep %>%
   arrange(mean_sleep) %>%
   as.data.frame()
 head(mean_sleep)
-  
 ```
 
 
@@ -148,11 +147,9 @@ daily_sleep %>%
   summarize(avg_persleep = mean(percent_sleep)) %>%
   arrange(avg_persleep) %>%
   mutate_if(is.numeric, round, 2)
-
-# Most participants slept for at least 90% of the time they spent in bed, with
-#   only 4 participants spending a smaller percent of time sleeping, the lowest
-#   being 63.37%
 ```
+
+- Most participants slept for at least 90% of the time they spent in bed, with only 4 participants spending a smaller percent of time sleeping, the lowest being 63.37%
 
 _Activity Levels_
 
@@ -248,6 +245,7 @@ ggplot(mean_steps, aes(x = Hour, y = mean_steps)) +
 We can see that the most steps were taken in the evening, from 5-7pm, and the least steps in the middle of the night, between 12-4am.
 
 4. I'm going to combine two datasets I created previously, activity_id and steps_byId, in order to find new relationships between variables. 
+
 ```{r}
 combined_data <- merge(activity_id, steps_byId, by = "Id")
 
